@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina de inicio</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+    <body style="background-color: yellow;">
+    <center>
+        <h1 style="background-color: #666600;color: white;padding: 10px;width: 400px">Proceso de Identificación</h1>
+        <form action="valida.do" method="POST">
+            <fieldset style="width: 300px">
+                <legend><b>Datos personales</b></legend>
+                <table>
+                    <tr>
+                        <td><label>Login:</label></td>
+                        <td><input type="text" name="login"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Clave:</label></td>
+                        <td><input type="password" name="clave" size="8"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="bt" value="Enviar"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <form action="registra.do" method="POST">
+           <div style="text-align: center"><p> 
+                            <button>Registrar<a href="registro.view"></a></button>
+                        </p></div>
+</form>
+    </center> 
+
+</body>
 </html>
